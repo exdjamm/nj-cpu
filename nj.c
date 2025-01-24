@@ -15,7 +15,7 @@ void nj(options_t op, float *dtime){
         return;
     
     *dtime = clock();
-    if(op.heap){
+    if(op.p == 0.0){
 
         if(op.k == 0)
             nj_heap(D);
